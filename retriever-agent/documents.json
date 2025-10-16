@@ -1,0 +1,75 @@
+[
+  {
+    "id": "doc-001",
+    "title": "Introduction to Machine Learning",
+    "content": "Machine learning is a subset of artificial intelligence that enables systems to learn and improve from experience without being explicitly programmed. It focuses on the development of computer programs that can access data and use it to learn for themselves.",
+    "category": "AI"
+  },
+  {
+    "id": "doc-002",
+    "title": "Deep Learning Fundamentals",
+    "content": "Deep learning is a subset of machine learning based on artificial neural networks. The learning can be supervised, semi-supervised or unsupervised. Deep learning architectures such as deep neural networks, deep belief networks, and recurrent neural networks have been applied to fields including computer vision, speech recognition, and natural language processing.",
+    "category": "AI"
+  },
+  {
+    "id": "doc-003",
+    "title": "Natural Language Processing Basics",
+    "content": "Natural language processing (NLP) is a subfield of linguistics, computer science, and artificial intelligence concerned with the interactions between computers and human language. NLP is used to apply machine learning algorithms to text and speech.",
+    "category": "AI"
+  },
+  {
+    "id": "doc-004",
+    "title": "Cloud Computing Overview",
+    "content": "Cloud computing is the on-demand availability of computer system resources, especially data storage and computing power, without direct active management by the user. Large clouds often have functions distributed over multiple locations, each location being a data center.",
+    "category": "Cloud"
+  },
+  {
+    "id": "doc-005",
+    "title": "Microservices Architecture",
+    "content": "Microservices architecture is an architectural style that structures an application as a collection of services that are highly maintainable, testable, loosely coupled, independently deployable, and organized around business capabilities. This architecture enables continuous delivery and deployment of large, complex applications.",
+    "category": "Architecture"
+  },
+  {
+    "id": "doc-006",
+    "title": "API Gateway Patterns",
+    "content": "An API gateway is a server that acts as an API front-end, receives API requests, enforces throttling and security policies, passes requests to the back-end service and then passes the response back to the requester. API gateways often handle common tasks that are used across a system of API services, such as user authentication, rate limiting, and statistics.",
+    "category": "Architecture"
+  },
+  {
+    "id": "doc-007",
+    "title": "Docker Containerization",
+    "content": "Docker is a platform designed to help developers build, share, and run modern applications. Docker handles the tedious setup, so you can focus on the code. Containers are lightweight, portable, and self-sufficient units that can run applications reliably in different computing environments.",
+    "category": "DevOps"
+  },
+  {
+    "id": "doc-008",
+    "title": "Kubernetes Orchestration",
+    "content": "Kubernetes is an open-source container orchestration platform that automates many of the manual processes involved in deploying, managing, and scaling containerized applications. It groups containers that make up an application into logical units for easy management and discovery.",
+    "category": "DevOps"
+  },
+  {
+    "id": "doc-009",
+    "title": "RESTful API Design",
+    "content": "REST (Representational State Transfer) is an architectural style for designing networked applications. RESTful APIs use HTTP requests to perform CRUD operations (Create, Read, Update, Delete) on resources. REST is stateless, meaning each request from client to server must contain all information needed to understand the request.",
+    "category": "API"
+  },
+  {
+    "id": "doc-010",
+    "title": "Python Programming Essentials",
+    "content": "Python is a high-level, interpreted programming language with dynamic semantics. Its high-level built-in data structures, combined with dynamic typing and dynamic binding, make it very attractive for Rapid Application Development, as well as for use as a scripting or glue language to connect existing components together.",
+    "category": "Programming"
+  },
+  {
+    "id": "doc-011",
+    "title": "Database Design Principles",
+    "content": "Database design is the organization of data according to a database model. The designer determines what data must be stored and how the data elements interrelate. Database design involves classifying data and identifying interrelationships. This theoretical representation is then realized through normalization.",
+    "category": "Database"
+  },
+  {
+    "id": "doc-012",
+    "title": "Cybersecurity Best Practices",
+    "content": "Cybersecurity is the practice of protecting systems, networks, and programs from digital attacks. These cyberattacks are usually aimed at accessing, changing, or destroying sensitive information, extorting money from users, or interrupting normal business processes. Implementing effective cybersecurity measures is particularly challenging today because there are more devices than people.",
+    "category": "Security"
+  }
+]
+

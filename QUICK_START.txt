@@ -1,0 +1,112 @@
+================================================================================
+  AI MICROSERVICES WITH API GATEWAY - QUICK START
+================================================================================
+
+📋 BEFORE YOU START:
+   1. Start Docker Desktop application
+   2. Wait until it shows "Docker Desktop is running"
+   3. Open PowerShell in this directory
+
+================================================================================
+🚀 STEP 1: START ALL SERVICES
+================================================================================
+
+PowerShell command:
+   docker-compose up --build
+
+Wait for: "Kong Configuration Complete!" (takes 3-5 minutes first time)
+
+================================================================================
+🧪 STEP 2: TEST THE API
+================================================================================
+
+Simple Test:
+   Invoke-RestMethod -Method Post -Uri "http://localhost:8000/process-request" `
+     -Headers @{"X-API-KEY"="my-secret-api-key-12345"; "Content-Type"="application/json"} `
+     -Body '{"request_id": "test-001", "query": "machine learning"}' | ConvertTo-Json
+
+Full Test Suite:
+   .\test-api.ps1
+
+================================================================================
+📊 STEP 3: VIEW LOGS
+================================================================================
+
+View audit logs:
+   Get-Content logs\audit.jsonl
+
+View service logs:
+   docker-compose logs orchestrator
+   docker-compose logs kong
+
+================================================================================
+🛑 STEP 4: STOP SERVICES
+================================================================================
+
+Stop all:
+   docker-compose down
+
+Stop and remove data:
+   docker-compose down -v
+
+================================================================================
+📝 KEY INFORMATION
+================================================================================
+
+Gateway URL:     http://localhost:8000/process-request
+API Key:         my-secret-api-key-12345
+Rate Limit:      5 requests/minute
+
+Request Format:
+   {
+     "request_id": "unique-id",
+     "query": "your search query"
+   }
+
+Test Scenarios:
+   1. Valid query:       "machine learning"
+   2. Policy denial:     "forbidden content"
+   3. Idempotency:       Use same request_id twice
+   4. Rate limit:        Send 6+ requests quickly
+   5. No auth:           Remove X-API-KEY header
+
+================================================================================
+❌ TROUBLESHOOTING
+================================================================================
+
+Problem: "cannot find file specified"
+Solution: Start Docker Desktop application
+
+Problem: Port already in use
+Solution: docker-compose down, then retry
+
+Problem: Services not starting
+Solution: docker-compose logs <service-name>
+
+Problem: Kong not configured
+Solution: docker-compose up kong-setup
+
+================================================================================
+📚 MORE HELP
+================================================================================
+
+   SETUP_GUIDE.md      - Detailed setup instructions
+   README.md           - Complete API documentation
+   PROJECT_SUMMARY.md  - Architecture overview
+
+================================================================================
+✅ READY TO SUBMIT
+================================================================================
+
+1. Zip the entire AIpeople directory
+2. Upload to Google Drive
+3. Share with "Anyone with the link can view"
+4. Submit the Google Drive link
+
+Exclude from zip:
+   - logs/*.jsonl files (generated at runtime)
+   - __pycache__/ directories
+
+================================================================================
+
+

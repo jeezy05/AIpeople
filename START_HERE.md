@@ -303,5 +303,3 @@ Expected: JSON response with summary about API Gateway and Microservices!
 
 Check the documentation files listed above - they contain answers to almost everything!
 
-**Good luck with your assignment! 🚀**
-
